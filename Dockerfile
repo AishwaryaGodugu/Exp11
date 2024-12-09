@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . /app
 
 # Compile the Java code (optional if it's already compiled in Eclipse)
-RUN javac Simple.java
+RUN javac Simple.class
 
 # Run the application
 CMD ["java", "Simple"]
